@@ -54,31 +54,6 @@
     
     
     <entry>
-      <title>Python程序打包为exe文件</title>
-      <link href="/2023/08/18/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E4%B8%BAexe%E6%96%87%E4%BB%B6/"/>
-      <url>/2023/08/18/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E4%B8%BAexe%E6%96%87%E4%BB%B6/</url>
-      
-        <content type="html"><![CDATA[<h2 id="pyinstaller的安装">pyinstaller的安装</h2><p><code>pip3 install pyinstaller</code></p><h2 id="打包exe">打包exe</h2><ol><li>cmd命令：<code>cd /d e:\software</code>，跳转到e:\software文件路径</li><li><code>pyinstaller-F setup.py</code>，将<strong><a href="http://setup.py">setup.py</a></strong>打包为<strong>setup.exe</strong></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习笔记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>减缩积分单元、沙漏控制与自定义单元：与Abaqus C3D8R单元的精度对比之旅</title>
       <link href="/2023/08/18/C3D8R%E6%B2%99%E6%BC%8F%E6%8E%A7%E5%88%B6/"/>
       <url>/2023/08/18/C3D8R%E6%B2%99%E6%BC%8F%E6%8E%A7%E5%88%B6/</url>
@@ -121,6 +96,31 @@
         <tags>
             
             <tag> Blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python程序打包为exe文件</title>
+      <link href="/2023/08/18/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E4%B8%BAexe%E6%96%87%E4%BB%B6/"/>
+      <url>/2023/08/18/python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E4%B8%BAexe%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="pyinstaller的安装">pyinstaller的安装</h2><p><code>pip3 install pyinstaller</code></p><h2 id="打包exe">打包exe</h2><ol><li>cmd命令：<code>cd /d e:\software</code>，跳转到e:\software文件路径</li><li><code>pyinstaller-F setup.py</code>，将<strong><a href="http://setup.py">setup.py</a></strong>打包为<strong>setup.exe</strong></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
             
         </tags>
       
