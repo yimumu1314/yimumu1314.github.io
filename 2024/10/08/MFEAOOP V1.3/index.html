@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="zh-CN" data-default-color-scheme="auto"><head><meta charset="UTF-8"><meta name="referrer" content="no-referrer"><link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png"><link rel="icon" href="/img/%E5%9C%9F%E6%9C%A8%E5%92%8C%E5%BB%BA%E7%AD%91.png"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,shrink-to-fit=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="theme-color" content="#2f4154"><meta name="author" content="易公子"><meta name="keywords" content=""><meta name="description" content="功能概览  支持荷载类型：  位移荷载 表面压强荷载 重力荷载   单元类型（共计支持33种单元类型）：  杆系单元：  T2D2、T3D2 B21、B23、B31、B33   平面单元：  CPS4、CPS8、CPS3、CPS6、CPS4R、CPS8R、CPS4I、CPS4Bar、CPS4SR CPE4、CPE8、CPE3、CPE6、CPE4R、CPE8R、CPE4I、CPSEBar、CPE4S"><meta property="og:type" content="article"><meta property="og:title" content="MFEAOOP V1.3"><meta property="og:url" content="http://yimumu.top/2024/10/08/MFEAOOP%20V1.3/index.html"><meta property="og:site_name" content="易木木响叮当"><meta property="og:description" content="功能概览  支持荷载类型：  位移荷载 表面压强荷载 重力荷载   单元类型（共计支持33种单元类型）：  杆系单元：  T2D2、T3D2 B21、B23、B31、B33   平面单元：  CPS4、CPS8、CPS3、CPS6、CPS4R、CPS8R、CPS4I、CPS4Bar、CPS4SR CPE4、CPE8、CPE3、CPE6、CPE4R、CPE8R、CPE4I、CPSEBar、CPE4S"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://yimumu.top/img/MFEAOOPV1.3.png"><meta property="article:published_time" content="2024-10-08T09:51:37.000Z"><meta property="article:modified_time" content="2024-10-08T10:32:18.576Z"><meta property="article:author" content="易木木响叮当"><meta property="article:tag" content="MFEA"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="http://yimumu.top/img/MFEAOOPV1.3.png"><meta name="referrer" content="no-referrer-when-downgrade"><title>MFEAOOP V1.3 - 易木木响叮当</title><link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css"><link rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css"><link rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css"><link rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"><link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><link rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css"><link rel="stylesheet" href="/css/main.css"><link id="highlight-css" rel="stylesheet" href="/css/highlight.css"><link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css"><link rel="stylesheet" href="/css/custom.css"><script id="fluid-configs">var Fluid=window.Fluid||{};Fluid.ctx=Object.assign({},Fluid.ctx);var dntVal,CONFIG={hostname:"yimumu.top",root:"/",version:"1.9.5",typing:{enable:!0,typeSpeed:70,cursorChar:"_",loop:!1,scope:[]},anchorjs:{enable:!0,element:"h1,h2,h3,h4,h5,h6",placement:"left",visible:"hover",icon:""},progressbar:{enable:!0,height_px:3,color:"#29d",options:{showSpinner:!1,trickleSpeed:100}},code_language:{enable:!0,default:"TEXT"},copy_btn:!0,image_caption:{enable:!0},image_zoom:{enable:!0,img_url_replace:["",""]},toc:{enable:!0,placement:"left",headingSelector:"h1,h2,h3,h4,h5,h6",collapseDepth:0},lazyload:{enable:!0,loading_img:"/img/loading.gif",onlypost:!1,offset_factor:2},web_analytics:{enable:!0,follow_dnt:!0,baidu:null,google:{measurement_id:null},tencent:{sid:null,cid:null},woyaola:null,cnzz:null,leancloud:{app_id:"mZ5jEWyphLHjwSbQnhRWZhXX-gzGzoHsz",app_key:"Fqky0H0RCuM0M1pxId5uidWp",server_url:"http://yimumu.top",path:"window.location.pathname",ignore_local:!1}},search_path:"/local-search.xml",include_content_in_search:!0};CONFIG.web_analytics.follow_dnt&&(dntVal=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,Fluid.ctx.dnt=dntVal&&(dntVal.startsWith("1")||dntVal.startsWith("yes")||dntVal.startsWith("on")))</script><script src="/js/utils.js"></script><script src="/js/color-schema.js"></script><script async>Fluid.ctx.dnt||Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=",function(){function a(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],a("js",new Date),a("config","")})</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css"><meta name="generator" content="Hexo 6.3.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><header><div class="header-inner" style="height:70vh"><nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar"><div class="container"><a class="navbar-brand" href="/"><strong>Yimumu&#39;s Blog</strong> </a><button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon"><span></span><span></span><span></span></div></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ml-auto text-center"><li class="nav-item"><a class="nav-link" href="/" target="_self"><i class="iconfont icon-home-fill"></i> <span>首页</span></a></li><li class="nav-item"><a class="nav-link" href="/archives/" target="_self"><i class="iconfont icon-archive-fill"></i> <span>归档</span></a></li><li class="nav-item"><a class="nav-link" href="/categories/" target="_self"><i class="iconfont icon-category-fill"></i> <span>分类</span></a></li><li class="nav-item"><a class="nav-link" href="/tags/" target="_self"><i class="iconfont icon-tags-fill"></i> <span>标签</span></a></li><li class="nav-item"><a class="nav-link" href="/about/" target="_self"><i class="iconfont icon-user-fill"></i> <span>关于</span></a></li><li class="nav-item" id="search-btn"><a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search"><i class="iconfont icon-search"></i></a></li><li class="nav-item" id="color-toggle-btn"><a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle"><i class="iconfont icon-dark" id="color-toggle-icon"></i></a></li></ul></div></div></nav><div id="banner" class="banner" parallax="true" style="background:url(/img/default.png) no-repeat center center;background-size:cover"><div class="full-bg-img"><div class="mask flex-center" style="background-color:rgba(0,0,0,.3)"><div class="banner-text text-center fade-in-up"><div class="h2"><span id="subtitle" data-typed-text="MFEAOOP V1.3"></span></div><div class="mt-3"><span class="post-meta mr-2"><i class="iconfont icon-author" aria-hidden="true"></i> 易公子 </span><span class="post-meta"><i class="iconfont icon-date-fill" aria-hidden="true"></i> <time datetime="2024-10-08 17:51" pubdate>2024年10月8日 下午</time></span></div><div class="mt-1"><span class="post-meta mr-2"><i class="iconfont icon-chart"></i> 6.1k 字 </span><span class="post-meta mr-2"><i class="iconfont icon-clock-fill"></i> 51 分钟 </span><span id="busuanzi_container_page_pv" style="display:none"><i class="iconfont icon-eye" aria-hidden="true"></i> <span id="busuanzi_value_page_pv"></span> 次</span></div></div></div></div></div></div></header><main><div class="container-fluid nopadding-x"><div class="row nomargin-x"><div class="side-col d-none d-lg-block col-lg-2"><aside class="sidebar" style="padding-left:2rem;margin-right:-1rem"><div id="toc"><p class="toc-header"><i class="iconfont icon-list"></i> <span>目录</span></p><div class="toc-body" id="toc-body"></div></div></aside></div><div class="col-lg-8 nopadding-x-md"><div class="container nopadding-x-md" id="board-ctn"><div id="board"><article class="post-content mx-auto"><h1 id="seo-header">MFEAOOP V1.3</h1><div class="markdown-body"><h2 id="功能概览">功能概览</h2><ol><li>支持荷载类型：<ol><li>位移荷载</li><li>表面压强荷载</li><li>重力荷载</li></ol></li><li>单元类型（共计支持33种单元类型）：<ol><li>杆系单元：<ol><li>T2D2、T3D2</li><li>B21、B23、B31、B33</li></ol></li><li>平面单元：<ol><li>CPS4、CPS8、CPS3、CPS6、CPS4R、CPS8R、CPS4I、CPS4Bar、CPS4SR</li><li>CPE4、CPE8、CPE3、CPE6、CPE4R、CPE8R、CPE4I、CPSEBar、CPE4SR</li></ol></li><li>空间实体单元：<ol><li>C3D4、C3D10、C3D8、C3D20、C3D8R、C3D20R、C3D8I、C3D8Bar、C3D8SR</li></ol></li></ol></li><li>整体刚度矩阵组装：稀疏矩阵存储格式，使用三元组（Triplet）形式，即行索引数组、列索引数组和非零值数组</li><li>线性方程组求解技术：提供<strong>直接求解法</strong>和<strong>pcg迭代求解器</strong>选项，面对较大模型时可以大大提升刚度方程的求解效率</li><li>边界条件：使用<strong>罚函数</strong>技术</li><li>节点应力磨平处理:<ol><li>对于单元形状不均匀的结构模型，对于共节点处的应力采用<strong>体积/面积加权</strong>磨平处理</li><li>对于单元形状均匀的结构模型，对于共节点处的应力采用<strong>直接绕节点平均</strong>磨平处理</li></ol></li><li>支持多种材料属性的赋予</li><li>场输出:U、RF、UR、RFM、S</li><li>前处理：解析 <strong>Abaqus-inp</strong> 文件：<ol><li><strong>Node</strong>节点坐标</li><li><strong>Element</strong>单元局部节点编号</li><li><strong>Nset</strong>节点集</li><li><strong>Elset</strong>单元集</li><li><strong>Surface</strong>单元面信息</li></ol></li><li>配置文件：使用 <strong>json 文件</strong>作为程序的配置文件<ol><li>材料信息</li><li>截面属性</li><li>边界条件</li><li>求解器</li><li>绘图控制</li></ol></li><li>文件输出：<ol><li><strong>结果文件</strong>（.dat），记录各节点位移、支反力等</li><li><strong>vtk 文件</strong>，可导入 Paraview 中进行可视化显示，或者使用 Python 的 Pyvista 库进行可视化也都是可以的</li><li><strong>log 文件</strong>，记录计算各个过程的具体时间明细以及一些模型信息。</li></ol></li></ol><h2 id="JSON配置文件">JSON配置文件</h2><h3 id="普通单一材料">普通单一材料</h3><p>平面单元需要指定厚度参数<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:.6151em"></span><span class="mord mathnormal">t</span></span></span></span>，空间实体单元无所谓，杆单元需要指定截面面积<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:.6833em"></span><span class="mord mathnormal">A</span></span></span></span>，梁单元需要指定截面类型，将会在下个小节详细介绍。</p><figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">&quot;materials&quot; : [
+        &#123;
+        &quot;name&quot; : &quot;Material-1&quot;,
+        &quot;category&quot; : &quot;Elastic&quot;,
+        &quot;data&quot; : &#123;
+            &quot;E&quot; : 1E6, &#x2F;&#x2F; 弹性模量
+            &quot;v&quot; : 0.3, &#x2F;&#x2F; 泊松比
+            &quot;t&quot; : 1, &#x2F;&#x2F; 平面单元厚度
+            &quot;A&quot; : 1 &#x2F;&#x2F; 杆单元截面面积
+            &#125;
+        &#125;
+    ]</code></pre></div></figure><h3 id="梁单元截面">梁单元截面</h3><p>梁单元支持矩形截面、环形截面、圆形截面，需要指定几何参数。</p><figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">&quot;materials&quot; : [
+        &#123;
+        &quot;name&quot; : &quot;Material-1&quot;,
+        &quot;category&quot; : &quot;Elastic&quot;,
+        &quot;data&quot; : &#123;
+            &quot;E&quot; : 3e10, &#x2F;&#x2F; 弹性模量
+            &quot;v&quot; : 0.2, &#x2F;&#x2F; 泊松比
+            &quot;Profile&quot; : &quot;Rectangular&quot;,  &#x2F;&#x2F; 矩形截面
+            &quot;a&quot; : 0.4, &#x2F;&#x2F;宽度
+            &quot;b&quot; : 0.4, &#x2F;&#x2F; 高度
+            &quot;Profile&quot; : &quot;Pipe&quot;, &#x2F;&#x2F;环形截面
+            &quot;D&quot; : 0.2, &#x2F;&#x2F;外半径
+            &quot;d&quot; : 0.1, &#x2F;&#x2F; 内半径
+            &quot;Profile&quot; : &quot;Circular&quot;, &#x2F;&#x2F;圆形截面
+            &quot;r&quot; : 0.1 &#x2F;&#x2F; 半径
+            &#125;
+        &#125;
+    ]</code></pre></div></figure><h3 id="赋予多种材料属性">赋予多种材料属性</h3><p>对于多种材料属性的施加，需要指定材料属性对应的单元集。</p><figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">&quot;materials&quot; : [
+        &#123;
+            &quot;name&quot; : &quot;Material-1&quot;,
+            &quot;category&quot; : &quot;Elastic&quot;,
+            &quot;data&quot; : &#123;
+                &quot;E&quot; : 1E6,
+                &quot;v&quot; : 0.3,
+                &quot;t&quot; : 1
+            &#125;,
+            &quot;elSet&quot;: &quot;Set-15&quot;
+        &#125;,
+        &#123;
+            &quot;name&quot; : &quot;Material-2&quot;,
+            &quot;category&quot; : &quot;Elastic&quot;,
+            &quot;data&quot; : &#123;
+                &quot;E&quot; : 2E6,
+                &quot;v&quot; : 0.3,
+                &quot;t&quot; : 1
+            &#125;,
+            &quot;elSet&quot;: &quot;Set-16&quot;
+        &#125;
+    ]</code></pre></div></figure><h3 id="固支边界">固支边界</h3><p><code>type</code>为constraint，需要指定不同的方向，<code>nset</code>为节点集（与inp文件一致）。比如想要在x方向和y方向均施加固定约束，可指定&quot;direction&quot;: “xy”。</p><figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">&quot;bc&quot; : [
+    &#123;
+        &quot;name&quot; : &quot;fix1&quot;,
+        &quot;type&quot;: &quot;constraint&quot;,
+        &quot;direction&quot;: &quot;xy&quot;,
+        &quot;nset&quot; : &quot;Set-XY&quot;
+    &#125;]</code></pre></div></figure><h3 id="位移边界">位移边界</h3><p><code>type</code>为displacement，需要指定不同的方向，<code>nset</code>为节点集（与inp文件一致），<code>value</code>为位移值。比如想要在x方向和y方向均施加位移，可指定&quot;direction&quot;: “xy”。</p><figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">&quot;bc&quot; : [
+    &#123;
+        &quot;name&quot; : &quot;dis1&quot;, 
+        &quot;type&quot;: &quot;displacement&quot;, 
+        &quot;direction&quot;: &quot;x&quot;, 
+        &quot;nset&quot; : &quot;Set-U&quot;, 
+        &quot;value&quot; : 1 
+    &#125;]</code></pre></div></figure><h3 id="表面压强边界">表面压强边界</h3><p><code>type</code>为pressure，需要指定表面名字（与inp文件一致），以及压强值。</p><figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">&quot;bc&quot; : [
+    &#123;
+        &quot;name&quot; : &quot;pressure1&quot;, 
+        &quot;type&quot;: &quot;pressure&quot;, 
+        &quot;surface&quot; : &quot;Surf-1&quot;, 
+        &quot;value&quot; : 1000
+    &#125;]</code></pre></div></figure><h3 id="重力荷载">重力荷载</h3><p><code>type</code>为gravity，需要指定重力加速度，以及重力方向。</p><figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">&quot;bc&quot; : [
+    &#123;
+        &quot;name&quot; : &quot;Gravity1&quot;, 
+        &quot;type&quot;: &quot;gravity&quot;, 
+        &quot;density&quot; : 9.8, 
+        &quot;gravity&quot; : &#123;
+            &quot;x&quot;: 0.0,
+            &quot;y&quot;: 0.0,
+            &quot;z&quot;: -9.8
+        &#125; 
+    &#125;]</code></pre></div></figure><h3 id="求解器">求解器</h3><figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">&quot;solve&quot; : &#123;
+        &quot;calculateStress&quot;: true, &#x2F;&#x2F; 应力计算开关
+        &quot;solver&quot; : &quot;direct&quot;, &#x2F;&#x2F; 求解器类型，可选：direct、pcg
+        &quot;tolerance&quot;: 1e-8, &#x2F;&#x2F; 容差
+        &quot;maxIterations&quot;: 1000 &#x2F;&#x2F; 最大迭代次数
+    &#125;</code></pre></div></figure><h3 id="后处理">后处理</h3><ol><li><code>fields</code>：场信息，需要指定要显示的场信息<ol><li>二维杆单元：U1, U2, Umag, RF1, RF2, RFmag, S11</li><li>三维杆单元：U1, U2, U3, Umag, RF1, RF2, RF3, RFmag, S11</li><li>二维梁单元：U1, U2, Umag, UR3, RF1, RF2, RFmag, RFM3</li><li>三维梁单元：U1, U2, U3, Umag, UR1, UR2, UR3, URmag, RF1, RF2, RF3, RFmag, RFM1, RFM2, RFM3, RFMmag</li><li>平面单元：U1, U2, Umag, RF1, RF2, RFmag, S11, S22, S12, Mises, model, deform</li><li>空间实体单元：U1, U2, U3, Umag, RF1, RF2, RF3, RFmag, S11, S22, S33, S12, S13, S23, Mises, model, deform</li></ol></li><li><code>average</code>：平均化方式，可选：simple, volume，分别对应绕节点直接平均和体积/面积加权</li><li><code>edgeColor</code>：单元边界颜色</li><li><code>faceColor</code>：单元面颜色，当输出model, deform时，显示的单元面颜色</li><li><code>alpha</code>：单元面透明度</li><li><code>colorMap</code>：可选abaqus或者matlab支持的colormap，如jet、summer等</li><li><code>discretize</code>：若为true，则colormap分段显示；若为false，则colormap连续平滑显示</li><li><code>discretizeNum</code>：colormap分段数</li></ol><figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">&quot;plot&quot; : &#123;
+        &quot;fields&quot; : [&quot;Mises&quot;,&quot;Umag&quot;],
+        &quot;average&quot; : &quot;simple&quot;,
+        &quot;edgeColor&quot; : &quot;#000080&quot;,
+        &quot;faceColor&quot; : &quot;#77AC30&quot;,
+        &quot;alpha&quot; : 1,
+        &quot;colorMap&quot; : &quot;abaqus&quot;,
+        &quot;discretize&quot; : true,
+        &quot;discretizeNum&quot; : 12
+    &#125;</code></pre></div></figure><h2 id="单元类型">单元类型</h2><p>共计支持33种单元类型，罗列如下：</p><h3 id="杆系单元">杆系单元</h3><ol><li>T2D2：二维杆单元</li><li>T3D2：三维杆单元</li></ol><h3 id="梁单元">梁单元</h3><ol><li>B21：二维Timoshenko梁单元（按照Abaqus帮助文档进行剪切刚度修正）</li><li>B31：三维Timoshenko梁单元（按照Abaqus帮助文档进行剪切刚度修正）</li><li>B23：二维Euler-Bernoulli 梁单元(cubic beam)</li><li>B33：三维Euler-Bernoulli 梁单元(cubic beam)</li></ol><h3 id="平面单元">平面单元</h3><p>平面应力：</p><ol><li>CPS3：线性三角形单元</li><li>CPS6：二次三角形单元</li><li>CPS4：线性四边形单元</li><li>CPS8：二次四边形单元</li><li>CPS8R：减缩积分单元</li><li>CPS4R：减缩积分单元，已添加沙漏刚度</li><li>CPS4I：非协调线性四边形单元，避免剪切自锁</li><li>CPS4SR：选择性减缩积分，避免体积自锁</li><li>CPS4Bar：对B矩阵加以Bar修正，避免体积自锁（与Abaqus帮助文档处理方法一致）</li></ol><p>平面应变：</p><ol><li>CPE3：线性三角形单元</li><li>CPE6：二次三角形单元</li><li>CPE4：线性四边形单元</li><li>CPE8：二次四边形单元</li><li>CPE8R：减缩积分单元</li><li>CPE4R：减缩积分单元，已添加沙漏刚度</li><li>CPE4I：非协调线性四边形单元，避免剪切自锁</li><li>CPE4SR：选择性减缩积分，避免体积自锁</li><li>CPE4Bar：对B矩阵加以Bar修正，避免体积自锁（与Abaqus帮助文档处理方法一致）</li></ol><h3 id="空间实体单元">空间实体单元</h3><ol><li>C3D4：线性四面体单元</li><li>C3D8：线性六面体单元</li><li>C3D10：二次四面体单元</li><li>C3D20：二次六面体单元</li><li>C3D20：减缩积分单元</li><li>C3D8R：减缩积分单元，已添加沙漏刚度</li><li>C3D8I：非协调线性八面体单元，避免剪切自锁</li><li>C3D8SR：选择性减缩积分，避免体积自锁</li><li>C3D8Bar：对B矩阵加以Bar修正，避免体积自锁（与Abaqus帮助文档处理方法一致）</li></ol><h2 id="项目文件结构图">项目文件结构图</h2><figure><div class="code-wrapper"><pre class="line-numbers language-text" data-language="text"><code class="language-text">V1-3
+├─ class
+│  ├─ FEAData.m
+│  ├─ FEASolver.m
+│  └─ writeFile.m
+├─ elements
+│  ├─ 2D
+│  │  ├─ CPE3.m
+│  │  ├─ CPE4.m
+│  │  ├─ CPE4Bar.m
+│  │  ├─ CPE4I.m
+│  │  ├─ CPE4R.m
+│  │  ├─ CPE4SR.m
+│  │  ├─ CPE6.m
+│  │  ├─ CPE8.m
+│  │  ├─ CPE8R.m
+│  │  ├─ CPS3.m
+│  │  ├─ CPS4.m
+│  │  ├─ CPS4Bar.m
+│  │  ├─ CPS4I.m
+│  │  ├─ CPS4R.m
+│  │  ├─ CPS4SR.m
+│  │  ├─ CPS6.m
+│  │  ├─ CPS8.m
+│  │  └─ CPS8R.m
+│  ├─ 3D
+│  │  ├─ C3D10.m
+│  │  ├─ C3D20.m
+│  │  ├─ C3D20R.m
+│  │  ├─ C3D4.m
+│  │  ├─ C3D8.m
+│  │  ├─ C3D8Bar.m
+│  │  ├─ C3D8I.m
+│  │  ├─ C3D8R.m
+│  │  └─ C3D8SR.m
+│  ├─ beam
+│  │  ├─ B21.m
+│  │  ├─ B23.m
+│  │  ├─ B31.m
+│  │  └─ B33.m
+│  └─ truss
+│     ├─ T2D2.m
+│     └─ T3D2.m
+├─ input
+│  ├─ Abaqus
+│  │  ├─ aiFeiEr.inp
+│  │  ├─ B21.inp
+│  │  ├─ B23.inp
+│  │  ├─ B31.inp
+│  │  ├─ B33.inp
+│  │  ├─ C3D10.inp
+│  │  ├─ C3D20.inp
+│  │  ├─ C3D4.inp
+│  │  ├─ C3D4test.inp
+│  │  ├─ C3D8.inp
+│  │  ├─ CPS3.inp
+│  │  ├─ CPS4.inp
+│  │  ├─ CPS6.inp
+│  │  ├─ CPS8.inp
+│  │  ├─ hg4.inp
+│  │  ├─ hg8.inp
+│  │  ├─ T1D3.inp
+│  │  ├─ T2D2.inp
+│  │  ├─ T3D2.inp
+│  │  └─ T3D2test.inp
+│  ├─ beam2D.json
+│  ├─ beam3D.json
+│  ├─ plane.json
+│  ├─ solid.json
+│  ├─ truss2D.json
+│  └─ truss3D.json
+├─ main.m
+├─ output
+├─ README.md
+└─ utitls
+   ├─ Bmatrix2D.m
+   ├─ Bmatrix3D.m
+   ├─ Dmatrix2D.m
+   ├─ Dmatrix3D.m
+   ├─ gauss1D.m
+   ├─ gauss2D.m
+   ├─ gauss3D.m
+   ├─ hammer2D.m
+   ├─ hammer3D.m
+   ├─ Jacobian.m
+   ├─ shapeFunction1D.m
+   ├─ shapeFunction2D.m
+   ├─ shapeFunction3D.m
+   └─ writeLog.m
+</code></pre></div></figure></div><hr><div><div class="post-metas my-3"><div class="post-meta mr-3 d-flex align-items-center"><i class="iconfont icon-category"></i> <span class="category-chains"><span class="category-chain"><a href="/categories/%E6%9C%89%E9%99%90%E5%85%83/" class="category-chain-item">有限元</a></span></span></div><div class="post-meta"><i class="iconfont icon-tags"></i> <a href="/tags/MFEA/" class="print-no-link">#MFEA</a></div></div><div class="license-box my-3"><div class="license-title"><div>MFEAOOP V1.3</div><div>http://yimumu.top/2024/10/08/MFEAOOP V1.3/</div></div><div class="license-meta"><div class="license-meta-item"><div>作者</div><div>易公子</div></div><div class="license-meta-item license-meta-date"><div>发布于</div><div>2024年10月8日</div></div><div class="license-meta-item license-meta-date"><div>更新于</div><div>2024年10月8日</div></div><div class="license-meta-item"><div>许可协议</div><div><a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/"><span class="hint--top hint--rounded" aria-label="BY - 署名"><i class="iconfont icon-by"></i></span></a></div></div></div><div class="license-icon iconfont"></div></div><div class="post-prevnext my-3"><article class="post-prev col-6"></article><article class="post-next col-6"><a href="/2023/09/03/My_blog/" title="My Blog"><span class="hidden-mobile">My Blog</span> <span class="visible-mobile">下一篇</span> <i class="iconfont icon-arrowright"></i></a></article></div></div></article></div></div></div><div class="side-col d-none d-lg-block col-lg-2"></div></div></div><a id="scroll-top-button" aria-label="TOP" href="#" role="button"><i class="iconfont icon-arrowup" aria-hidden="true"></i></a><div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-lg" role="document"><div class="modal-content"><div class="modal-header text-center"><h4 class="modal-title w-100 font-weight-bold">搜索</h4><button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body mx-3"><div class="md-form mb-5"><input type="text" id="local-search-input" class="form-control validate"> <label data-error="x" data-success="v" for="local-search-input">关键词</label></div><div class="list-group" id="local-search-result"></div></div></div></div></div></main><footer><div class="footer-inner"><div class="footer-content"><a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a></div><div class="statistics"><span id="busuanzi_container_site_pv" style="display:none">总访问量 <span id="busuanzi_value_site_pv"></span> 次 </span><span id="busuanzi_container_site_uv" style="display:none">总访客数 <span id="busuanzi_value_site_uv"></span> 人</span></div></div></footer><script src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js"></script><link rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css"><script>NProgress.configure({showSpinner:!1,trickleSpeed:100}),NProgress.start(),window.addEventListener("load",function(){NProgress.done()})</script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script><script src="/js/events.js"></script><script src="/js/plugins.js"></script><script src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js"></script><script>!function(t){var e=Fluid.plugins.typing,i=t.getElementById("subtitle");i&&e&&e(i.getAttribute("data-typed-text"))}((window,document))</script><script src="/js/img-lazyload.js"></script><script>Fluid.utils.createScript("https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js",function(){var t,o=jQuery("#toc");0!==o.length&&window.tocbot&&(t=jQuery("#board-ctn").offset().top,window.tocbot.init(Object.assign({tocSelector:"#toc-body",contentSelector:".markdown-body",linkClass:"tocbot-link",activeLinkClass:"tocbot-active-link",listClass:"tocbot-list",isCollapsedClass:"tocbot-is-collapsed",collapsibleClass:"tocbot-is-collapsible",scrollSmooth:!0,includeTitleTags:!0,headingsOffset:-t},CONFIG.toc)),0<o.find(".toc-list-item").length&&o.css("visibility","visible"),Fluid.events.registerRefreshCallback(function(){if("tocbot"in window){tocbot.refresh();var t=jQuery("#toc");if(0===t.length||!tocbot)return;0<t.find(".toc-list-item").length&&t.css("visibility","visible")}}))})</script><script src="https://lib.baomitu.com/prism/1.29.0/components/prism-core.min.js"></script><script src="https://lib.baomitu.com/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script><script src="https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js"></script><script>Fluid.plugins.codeWidget()</script><script>Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });</script><script>Fluid.utils.createScript("https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js",function(){Fluid.plugins.fancyBox()})</script><script>Fluid.plugins.imageCaption()</script><script defer src="/js/leancloud.js"></script><script src="/js/local-search.js"></script><script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="/js/boot.js"></script><noscript><div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div></noscript><script async src="/js/fireworks.js"></script><script async src="/js/custom.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({pluginRootPath:"live2dw/",pluginJsPath:"lib/",pluginModelPath:"assets/",tagMode:!1,debug:!1,model:{jsonPath:"/live2dw/assets/koharu.model.json"},display:{position:"right",width:150,height:300},mobile:{show:!0},log:!1})</script></body></html>
