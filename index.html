@@ -22,7 +22,7 @@
     
     
       
-        <title>MFEA</title>
+        <title>主页 - MFEA</title>
       
     
     
@@ -55,6 +55,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -91,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#网站介绍" class="md-skip">
+        <a href="#欢迎来到我的网站" class="md-skip">
           跳转至
         </a>
       
@@ -107,7 +109,7 @@
   <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="." title="MFEA" class="md-header__button md-logo" aria-label="MFEA" data-md-component="logo">
       
-  <img src="img/logo.png" alt="logo">
+  <img src="img/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -227,16 +229,19 @@
     
   
   
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="." class="md-tabs__link">
+          
   
     
   
   主页
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -244,16 +249,19 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="about/" class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item">
+        <a href="about/" class="md-tabs__link">
+          
   
     
   
   关于
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -317,7 +325,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -330,7 +340,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="MFEA" class="md-nav__button md-logo" aria-label="MFEA" data-md-component="logo">
       
-  <img src="img/logo.png" alt="logo">
+  <img src="img/logo.svg" alt="logo">
 
     </a>
     MFEA
@@ -346,16 +356,37 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
+    
+    
       
         
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
           
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="." class="md-nav__link md-nav__link--active">
+              
   
   <span class="md-ellipsis">
     主页
@@ -363,271 +394,21 @@
   </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+            </a>
+            
+          </div>
         
-  
-  <span class="md-ellipsis">
-    主页
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mkdocs常用命令" class="md-nav__link">
-    <span class="md-ellipsis">
-      MkDocs常用命令
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mkdocs-markdown语法" class="md-nav__link">
-    <span class="md-ellipsis">
-      MkDocs-Markdown语法
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="MkDocs-Markdown语法">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#代码块" class="md-nav__link">
-    <span class="md-ellipsis">
-      代码块
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="代码块">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#附带标题" class="md-nav__link">
-    <span class="md-ellipsis">
-      附带标题
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#附带行号" class="md-nav__link">
-    <span class="md-ellipsis">
-      附带行号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#突出显示特定行" class="md-nav__link">
-    <span class="md-ellipsis">
-      突出显示特定行
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#分组代码块" class="md-nav__link">
-    <span class="md-ellipsis">
-      分组代码块
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#数学公式" class="md-nav__link">
-    <span class="md-ellipsis">
-      数学公式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#图片" class="md-nav__link">
-    <span class="md-ellipsis">
-      图片
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="图片">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#原始大小" class="md-nav__link">
-    <span class="md-ellipsis">
-      原始大小
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#更改大小" class="md-nav__link">
-    <span class="md-ellipsis">
-      更改大小
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#列表" class="md-nav__link">
-    <span class="md-ellipsis">
-      列表
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tooltips" class="md-nav__link">
-    <span class="md-ellipsis">
-      tooltips
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#分列" class="md-nav__link">
-    <span class="md-ellipsis">
-      分列
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#引用" class="md-nav__link">
-    <span class="md-ellipsis">
-      引用
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#盒子" class="md-nav__link">
-    <span class="md-ellipsis">
-      盒子
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="盒子">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#内置环境" class="md-nav__link">
-    <span class="md-ellipsis">
-      内置环境
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#自定义标题" class="md-nav__link">
-    <span class="md-ellipsis">
-      自定义标题
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#折叠盒子" class="md-nav__link">
-    <span class="md-ellipsis">
-      折叠盒子
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#取消标题显示" class="md-nav__link">
-    <span class="md-ellipsis">
-      取消标题显示
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#嵌入3d交互图像" class="md-nav__link">
-    <span class="md-ellipsis">
-      嵌入3D交互图像
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#脚注" class="md-nav__link">
-    <span class="md-ellipsis">
-      脚注
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#annotate" class="md-nav__link">
-    <span class="md-ellipsis">
-      annotate
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            主页
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -639,9 +420,33 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="about/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="about/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     关于
@@ -649,7 +454,13 @@
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -775,7 +586,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -789,245 +602,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mkdocs常用命令" class="md-nav__link">
-    <span class="md-ellipsis">
-      MkDocs常用命令
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mkdocs-markdown语法" class="md-nav__link">
-    <span class="md-ellipsis">
-      MkDocs-Markdown语法
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="MkDocs-Markdown语法">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#代码块" class="md-nav__link">
-    <span class="md-ellipsis">
-      代码块
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="代码块">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#附带标题" class="md-nav__link">
-    <span class="md-ellipsis">
-      附带标题
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#附带行号" class="md-nav__link">
-    <span class="md-ellipsis">
-      附带行号
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#突出显示特定行" class="md-nav__link">
-    <span class="md-ellipsis">
-      突出显示特定行
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#分组代码块" class="md-nav__link">
-    <span class="md-ellipsis">
-      分组代码块
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#数学公式" class="md-nav__link">
-    <span class="md-ellipsis">
-      数学公式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#图片" class="md-nav__link">
-    <span class="md-ellipsis">
-      图片
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="图片">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#原始大小" class="md-nav__link">
-    <span class="md-ellipsis">
-      原始大小
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#更改大小" class="md-nav__link">
-    <span class="md-ellipsis">
-      更改大小
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#列表" class="md-nav__link">
-    <span class="md-ellipsis">
-      列表
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tooltips" class="md-nav__link">
-    <span class="md-ellipsis">
-      tooltips
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#分列" class="md-nav__link">
-    <span class="md-ellipsis">
-      分列
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#引用" class="md-nav__link">
-    <span class="md-ellipsis">
-      引用
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#盒子" class="md-nav__link">
-    <span class="md-ellipsis">
-      盒子
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="盒子">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#内置环境" class="md-nav__link">
-    <span class="md-ellipsis">
-      内置环境
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#自定义标题" class="md-nav__link">
-    <span class="md-ellipsis">
-      自定义标题
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#折叠盒子" class="md-nav__link">
-    <span class="md-ellipsis">
-      折叠盒子
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#取消标题显示" class="md-nav__link">
-    <span class="md-ellipsis">
-      取消标题显示
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#嵌入3d交互图像" class="md-nav__link">
-    <span class="md-ellipsis">
-      嵌入3D交互图像
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#脚注" class="md-nav__link">
-    <span class="md-ellipsis">
-      脚注
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#annotate" class="md-nav__link">
-    <span class="md-ellipsis">
-      annotate
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1039,260 +613,12 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="网站介绍">网站介绍<a class="headerlink" href="#%E7%BD%91%E7%AB%99%E4%BB%8B%E7%BB%8D" title="Anchor link to this section for reference">¶</a></h1>
-<h2 id="mkdocs常用命令">MkDocs常用命令<a class="headerlink" href="#mkdocs%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4" title="Anchor link to this section for reference">¶</a></h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - 创建新项目.</li>
-<li><code>mkdocs serve</code> - 网页实时预览.</li>
-<li><code>mkdocs build</code> - 部署网站（静态）.</li>
-<li><code>mkdocs build --clean</code> - 部署网站（静态），在发布新的版本之前，确保所有旧的文件都被清除并重新生成，进行站点更新后，确保不会有遗留的文件影响页面渲染。</li>
-<li><code>mkdocs gh-deploy</code> - 部署网站（GithubPage）.</li>
-</ul>
-<h2 id="mkdocs-markdown语法">MkDocs-Markdown语法<a class="headerlink" href="#mkdocs-markdown%E8%AF%AD%E6%B3%95" title="Anchor link to this section for reference">¶</a></h2>
-<h3 id="代码块">代码块<a class="headerlink" href="#%E4%BB%A3%E7%A0%81%E5%9D%97" title="Anchor link to this section for reference">¶</a></h3>
-<div class="language-python highlight"><span class="filename">Python</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-</span></code></pre></div>
-<h4 id="附带标题">附带标题<a class="headerlink" href="#%E9%99%84%E5%B8%A6%E6%A0%87%E9%A2%98" title="Anchor link to this section for reference">¶</a></h4>
-<div class="language-python highlight"><span class="filename">bubble_sort.py</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
-</span></code></pre></div>
-<h4 id="附带行号">附带行号<a class="headerlink" href="#%E9%99%84%E5%B8%A6%E8%A1%8C%E5%8F%B7" title="Anchor link to this section for reference">¶</a></h4>
-<p>为所有代码块显示行号</p>
-<div class="language-yaml highlight"><span class="filename">YAML</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">markdown_extensions</span><span class="p">:</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.highlight</span><span class="p">:</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">      </span><span class="nt">linenums</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span></code></pre></div>
-<p>为特定代码块显示行号</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-</span></code></pre></div></td></tr></table></div>
-<h4 id="突出显示特定行">突出显示特定行<a class="headerlink" href="#%E7%AA%81%E5%87%BA%E6%98%BE%E7%A4%BA%E7%89%B9%E5%AE%9A%E8%A1%8C" title="Anchor link to this section for reference">¶</a></h4>
-<div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
-</span></span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="hll">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
-</span></span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-</span></code></pre></div></td></tr></table></div>
-<h4 id="分组代码块">分组代码块<a class="headerlink" href="#%E5%88%86%E7%BB%84%E4%BB%A3%E7%A0%81%E5%9D%97" title="Anchor link to this section for reference">¶</a></h4>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">C</label><label for="__tabbed_1_2">C++</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-c highlight"><span class="filename">C</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello world!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-c++ highlight"><span class="filename">C++</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Hello world!"</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<h3 id="数学公式">数学公式<a class="headerlink" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F" title="Anchor link to this section for reference">¶</a></h3>
-<p>行内公式：<span class="arithmatex">\(a+b\)</span></p>
-<p>行间公式
-$$
-a + b = c
-$$</p>
-<h3 id="图片">图片<a class="headerlink" href="#%E5%9B%BE%E7%89%87" title="Anchor link to this section for reference">¶</a></h3>
-<h4 id="原始大小">原始大小<a class="headerlink" href="#%E5%8E%9F%E5%A7%8B%E5%A4%A7%E5%B0%8F" title="Anchor link to this section for reference">¶</a></h4>
-<p><figure id="_figure-1"><a class="glightbox" href="https://raw.githubusercontent.com/yimumu1314/markdown/main/20250127113800210.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="为什么" src="https://raw.githubusercontent.com/yimumu1314/markdown/main/20250127113800210.png"></a><figcaption>Figure 1: 为什么</figcaption></figure></p>
-<h4 id="更改大小">更改大小<a class="headerlink" href="#%E6%9B%B4%E6%94%B9%E5%A4%A7%E5%B0%8F" title="Anchor link to this section for reference">¶</a></h4>
-<p>借助HTML语法</p>
-<figure>
-    <img src="img/logo.png" style="border-radius: 8px; margin: 10px;
-    width=">
-  <figcaption>caption</figcaption>
-</figure>
-<h3 id="列表">列表<a class="headerlink" href="#%E5%88%97%E8%A1%A8" title="Anchor link to this section for reference">¶</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Vestibulum convallis sit amet nisi a tincidunt<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> In hac habitasse platea dictumst</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> In scelerisque nibh non dolor mollis congue sed et metus</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Praesent sed risus massa</li>
-</ul>
-</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque</li>
-</ul>
-<h3 id="tooltips">tooltips<a class="headerlink" href="#tooltips" title="Anchor link to this section for reference">¶</a></h3>
-<p><a href="https://example.com" title="I'm a tooltip!">Hover me</a></p>
-<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the W3C.</p>
-<h3 id="分列">分列<a class="headerlink" href="#%E5%88%86%E5%88%97" title="Anchor link to this section for reference">¶</a></h3>
-<div class="grid cards">
-<ul>
-<li>
-<div class="arithmatex">\[a = b\]</div>
-</li>
-<li><a class="glightbox" href="img/logo.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hhh" src="img/logo.png"></a></li>
-<li><code>import</code></li>
-<li>放放风</li>
-</ul>
-</div>
-<div class="grid">
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Unordered list</label><label for="__tabbed_2_2">Ordered list</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li>Sed sagittis eleifend rutrum</li>
-<li>Donec vitae suscipit est</li>
-<li>Nulla tempor lobortis orci</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>Sed sagittis eleifend rutrum</li>
-<li>Donec vitae suscipit est</li>
-<li>Nulla tempor lobortis orci</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="language-text highlight"><span class="filename">Content tabs</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>=== "Unordered list"
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    * Sed sagittis eleifend rutrum
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    * Donec vitae suscipit est
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    * Nulla tempor lobortis orci
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>=== "Ordered list"
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    1. Sed sagittis eleifend rutrum
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    2. Donec vitae suscipit est
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    3. Nulla tempor lobortis orci
-</span></code></pre></div>
-</div>
-<h3 id="引用">引用<a class="headerlink" href="#%E5%BC%95%E7%94%A8" title="Anchor link to this section for reference">¶</a></h3>
-<blockquote>
-<p>这是一个引用块。
-这是第二行。</p>
-<ul>
-<li>嵌套列表项</li>
-<li>另一个列表项</li>
-</ul>
-</blockquote>
-<h3 id="盒子">盒子<a class="headerlink" href="#%E7%9B%92%E5%AD%90" title="Anchor link to this section for reference">¶</a></h3>
-<h4 id="内置环境">内置环境<a class="headerlink" href="#%E5%86%85%E7%BD%AE%E7%8E%AF%E5%A2%83" title="Anchor link to this section for reference">¶</a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>这是一个警告框。 </p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>这是一个信息框。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>这是一个注意框。</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>这是一个提示框。  </p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>这是一个危险框。</p>
-</div>
-<div class="admonition quote">
-<p class="admonition-title">Quote</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.</p>
-</div>
-<div class="admonition bug">
-<p class="admonition-title">Bug</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.</p>
-</div>
-<div class="admonition failure">
-<p class="admonition-title">Failure</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.</p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Success</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Abstract</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.</p>
-</div>
-<h4 id="自定义标题">自定义标题<a class="headerlink" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E9%A2%98" title="Anchor link to this section for reference">¶</a></h4>
-<div class="admonition abstract">
-<p class="admonition-title">Lorem ipsum</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.</p>
-</div>
-<h4 id="折叠盒子">折叠盒子<a class="headerlink" href="#%E6%8A%98%E5%8F%A0%E7%9B%92%E5%AD%90" title="Anchor link to this section for reference">¶</a></h4>
-<details class="note">
-<summary>Note</summary>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-massa, nec semper lorem quam in massa.</p>
-</details>
-<h4 id="取消标题显示">取消标题显示<a class="headerlink" href="#%E5%8F%96%E6%B6%88%E6%A0%87%E9%A2%98%E6%98%BE%E7%A4%BA" title="Anchor link to this section for reference">¶</a></h4>
-<div class="admonition note">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-massa, nec semper lorem quam in massa.</p>
-</div>
-<h3 id="嵌入3d交互图像">嵌入3D交互图像<a class="headerlink" href="#%E5%B5%8C%E5%85%A53d%E4%BA%A4%E4%BA%92%E5%9B%BE%E5%83%8F" title="Anchor link to this section for reference">¶</a></h3>
-<p>以vedo库为例，需要先导出3D图像的html文件，然后采用<code>&lt;iframe&gt;</code>的方式嵌入。</p>
-<div class="language-python highlight"><span class="filename">Python</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">plt</span> <span class="o">=</span> <span class="n">Plotter</span><span class="p">()</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="s1">'embryo.html'</span><span class="p">)</span>
-</span></code></pre></div>
-<iframe src="img/html/embryo.html" width="800" height="600"></iframe>
 
-<h3 id="脚注">脚注<a class="headerlink" href="#%E8%84%9A%E6%B3%A8" title="Anchor link to this section for reference">¶</a></h3>
-<p>Lorem ipsum<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> dolor sit amet, consectetur adipiscing elit.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
-<h3 id="annotate">annotate<a class="headerlink" href="#annotate" title="Anchor link to this section for reference">¶</a></h3>
-<p>可作为补充说明、交叉引用。</p>
-<p class="annotate">Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit(2).</p>
-<ol>
-<li>I’m an annotation! I can contain <code>code</code>, <strong>formatted
-    text</strong>, images, … basically anything that can be expressed in Markdown.</li>
-<li>I’m an annotation! <a class="glightbox" href="https://raw.githubusercontent.com/yimumu1314/markdown/main/20250127113800210.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="为什么" src="https://raw.githubusercontent.com/yimumu1314/markdown/main/20250127113800210.png"></a></li>
-</ol>
-<div class="footnote">
-<hr>
-<ol>
-<li id="fn:1">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
-</li>
-<li id="fn:2">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-massa, nec semper lorem quam in massa. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
-</li>
-</ol>
-</div>
+<h1 id="欢迎来到我的网站">欢迎来到我的网站<a class="headerlink" href="#%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99" title="跳转到此部分">¶</a></h1>
 
 
 
@@ -1300,8 +626,13 @@ massa, nec semper lorem quam in massa. <a class="footnote-backref" href="#fnref
 
 
 
+  
+  
 
 
+
+
+  
 
 
 
@@ -1389,7 +720,9 @@ massa, nec semper lorem quam in massa. <a class="footnote-backref" href="#fnref
       
         <script src="javascripts/extra.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
