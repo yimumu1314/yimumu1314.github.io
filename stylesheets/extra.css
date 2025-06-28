@@ -12,6 +12,7 @@ button.md-top {
 }
 body {
       font-family: "LXGW WenKai", sans-serif;
+      
       /* Lite version */
       /* font-family: "LXGW WenKai Lite", sans-serif; */
       /* TC version */
@@ -379,6 +380,32 @@ h4 {
 /* 调整关于页面字体大小 */
 .about-page {
   font-size: 1.5em; /* 调整字体大小 */
+}
+
+/*------------------------------下划线-----------------------------------------*/
+.underline {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color:  lightblue; 
+}
+/*-----------------------------行内代码--------------------------------------*/
+.inline-code {
+    background-color: #dadada;
+    color: #79a0c7;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 17px;
+    word-break: break-word;
+}
+/*-------------------------------删除线-----------------------------------*/
+.custom-strike {
+  text-decoration: line-through;
+  background-color: #fff0f5;           
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  color: #444;
 }
 
 
