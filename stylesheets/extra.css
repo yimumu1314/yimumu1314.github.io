@@ -409,4 +409,15 @@ h4 {
 }
 
 
+/*--------------------------------表格设置---------------------------------*/
+/* 表头和表格单元都水平+垂直居中 */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+
+
+
 
