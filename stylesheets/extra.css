@@ -406,17 +406,28 @@ h4 {
 
 
 /*--------------------------------表格设置---------------------------------*/
-/* 整个表格居中对齐、内容宽度自适应 */
+/* ---------- 表格居中、自适应宽度与日夜模式 ---------- */
+
+/* 日间模式 */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(30, 167, 253, 0.06);
+}
+
+/* 夜间模式 */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  background: #1c222b;  /* Material 夜间风深蓝灰，可自调 */
+  box-shadow: 0 2px 8px rgba(30, 167, 253, 0.09);
+}
+
 .md-typeset table:not([class]) {
   margin-left: auto !important;
   margin-right: auto !important;
-  display: table;  /* 让表格自适应而不是100% */
+  display: table;
   border-collapse: separate !important;
   border-spacing: 0;
   border-radius: 9px;
-  box-shadow: 0 2px 8px rgba(30, 167, 253, 0.06);
   overflow: hidden;
-  background: #fff;
 }
 
 /* 单元格内容全部居中 */
@@ -426,19 +437,38 @@ h4 {
   vertical-align: middle !important;
 }
 
-/* 表头无背景，字体颜色更醒目（可选） */
-.md-typeset table:not([class]) th {
+/* 日间表头 */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
   background: none !important;
   color: #1976d2;
   font-weight: 600;
   border-bottom: 1.2px solid #e7eaf1;
 }
 
-/* 悬浮高亮行 */
-.md-typeset table:not([class]) tbody tr:hover {
+/* 夜间表头 */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: none !important;
+  color: #5ca4f2;   /* 更亮蓝，可自调 #72baff #5ca4f2 */
+  font-weight: 600;
+  border-bottom: 1.2px solid #2b313b;
+}
+
+/* 悬浮高亮行日夜模式 */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) tbody tr:hover {
   background: #f0f7ff !important;
   transition: background 0.18s;
 }
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: #212c3a !important;
+  transition: background 0.18s;
+}
+
+/* 表格圆角兼容 */
+.md-typeset table:not([class]) {
+  border-radius: 9px;
+  overflow: hidden;
+}
+
 
 
 
@@ -474,18 +504,32 @@ h4 {
 /* -------------------------------列表设置--------------------------------- */
 
 /* ---------- 有序&无序列表块卡片 ---------- */
+
+/* 日间模式 */
+[data-md-color-scheme="default"] .md-typeset > ul,
+[data-md-color-scheme="default"] .md-typeset > ol {
+  background: #f6fafd;
+  color: #25374a;
+  border: 1px solid #e3f2fd;
+  box-shadow: 0 2px 8px rgba(30, 167, 253, 0.05);
+}
+
+/* 夜间模式 */
+[data-md-color-scheme="slate"] .md-typeset > ul,
+[data-md-color-scheme="slate"] .md-typeset > ol {
+  background: #222d38;       /* 深蓝灰，接近Material夜间色 */
+  color: #e5eaf3;            /* 浅色，夜间易读 */
+  border: 1px solid #26313c;
+  box-shadow: 0 2px 8px rgba(30, 167, 253, 0.08);
+}
+
 .md-typeset > ul,
 .md-typeset > ol {
-  background: #f6fafd;            /* 柔和主色卡片底色 */
   padding: 0.9em 1.4em;
   margin: 1.5em 0;
   border-radius: 9px;
   font-size: 15.2px;
   line-height: 1.85;
-  color: #25374a;                 /* 正文深灰蓝 */
-  box-shadow: 0 2px 8px rgba(30, 167, 253, 0.05);
-  border: 1px solid #e3f2fd;
-  /* 可选：让多列表更立体 */
 }
 
 /* 主层无序列表小蓝圆点 */
@@ -496,8 +540,15 @@ h4 {
   margin: 0.37em 0 0.37em 1.05em;
   padding-left: 0.2em;
 }
-.md-typeset ul > li::marker {
+
+/* 日间/夜间无序列表 marker 颜色适配 */
+[data-md-color-scheme="default"] .md-typeset ul > li::marker {
   color: #1ea7fd;
+}
+[data-md-color-scheme="slate"] .md-typeset ul > li::marker {
+  color: #70baff;
+}
+.md-typeset ul > li::marker {
   font-size: 1.2em;
 }
 
@@ -509,9 +560,16 @@ h4 {
   margin: 0.37em 0 0.37em 1.12em;
   padding-left: 0.2em;
 }
-.md-typeset ol > li::marker {
-  color: #2196f3;          /* 主色序号 */
+/* 日间/夜间有序 marker 颜色适配 */
+[data-md-color-scheme="default"] .md-typeset ol > li::marker {
+  color: #2196f3;
   font-weight: 600;
+}
+[data-md-color-scheme="slate"] .md-typeset ol > li::marker {
+  color: #7cc6f9;
+  font-weight: 600;
+}
+.md-typeset ol > li::marker {
   font-size: 1.14em;
 }
 
@@ -528,16 +586,23 @@ h4 {
   font-size: 14.2px;
 }
 
-/* 嵌套无序列表更淡蓝小圆点 */
-.md-typeset ul ul > li::marker,
-.md-typeset ol ul > li::marker {
+/* 嵌套 marker 更淡蓝色，夜间自适应 */
+[data-md-color-scheme="default"] .md-typeset ul ul > li::marker,
+[data-md-color-scheme="default"] .md-typeset ol ul > li::marker,
+[data-md-color-scheme="default"] .md-typeset ol ol > li::marker,
+[data-md-color-scheme="default"] .md-typeset ul ol > li::marker {
   color: #7cc6f9;
-  font-size: 1em;
 }
-/* 嵌套有序列表更淡蓝序号 */
+[data-md-color-scheme="slate"] .md-typeset ul ul > li::marker,
+[data-md-color-scheme="slate"] .md-typeset ol ul > li::marker,
+[data-md-color-scheme="slate"] .md-typeset ol ol > li::marker,
+[data-md-color-scheme="slate"] .md-typeset ul ol > li::marker {
+  color: #93d6fd;
+}
+.md-typeset ul ul > li::marker,
+.md-typeset ol ul > li::marker,
 .md-typeset ol ol > li::marker,
 .md-typeset ul ol > li::marker {
-  color: #7cc6f9;
   font-size: 1em;
 }
 
@@ -551,15 +616,206 @@ h4 {
 
 
 
-/* 加粗字体 */
+
+/*------------------------------------ 全局加粗字体样式 ---------------------------------*/
 .md-typeset strong,
 .md-typeset b {
-  font-weight: 700;           /* 字体更粗 */
-  color: #25374a;             /* 深色，更醒目，可自定义 */
-  letter-spacing: 0.3px;      /* 稍微拉开一点点字间距 */
-  background: #f0f5ff;        /* 柔和浅底色，可不要 */
-  border-radius: 4px;         /* 圆角 */
-  padding: 1px 5px;           /* 内边距，让背景更舒服 */
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border-radius: 4px;
+  padding: 1px 5px;
+  transition: color 0.2s, background 0.2s;
 }
 
+/* 日间模式 */
+[data-md-color-scheme="default"] .md-typeset strong,
+[data-md-color-scheme="default"] .md-typeset b {
+  color: #25374a;
+  /* background: #f0f5ff;  // 可选柔和蓝底 */
+}
+
+/* 夜间模式 */
+[data-md-color-scheme="slate"] .md-typeset strong,
+[data-md-color-scheme="slate"] .md-typeset b {
+  color: #e6edf3;              /* Material默认字体色或 #e6edf3 */
+  /* background: #232946;      // 可选更深背景 */
+}
+
+
+/*------------------------------------首页统计样式-------------------------------*/
+
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1em;
+  font-size: 0.93em;
+  color: #a5a6aa;
+  background: none;
+  border: none;
+  margin: 2.2em 0 0.5em 0;
+  line-height: 1.3;
+  padding: 0;
+  font-style: normal;  /* 不斜体 */
+  font-weight: normal; /* 不加粗 */
+}
+
+.stats-row .stats-prefix {
+  color: #b8babf;
+  margin-right: 0.7em;
+  font-size: 0.97em;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.stats-row .stats-icon {
+  margin-right: 0.14em;
+  font-size: 1em;
+  opacity: 0.85;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.stats-row span {
+  white-space: nowrap;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+}
+
+@media (max-width: 700px) {
+  .stats-row {
+    font-size: 0.91em;
+    gap: 0.7em;
+    margin-top: 1em;
+  }
+}
+
+
+.stats-bottom {
+  margin-top: 4.5em;
+  margin-bottom: 0.6em;
+  justify-content: center;
+  font-size: 0.92em;
+  color: #b0b3ba;
+  opacity: 0.87;
+  border: none;
+  background: none;
+}
+
+.stats-bottom .stats-prefix {
+  color: #b8babf;
+  font-size: 0.97em;
+}
+
+/*--------------------------------------自我介绍页-----------------------------*/
+.about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+.about-left {
+  min-width: 138px;
+  max-width: 188px;
+  text-align: center;
+}
+.about-left .avatar {
+  width: 108px;
+  height: 108px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.1em;
+  box-shadow: 0 2px 10px rgba(40,80,130,0.07);
+  border: 2px solid #f0f4fb;
+  background: #f9fcff;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.0em;
+  margin-top: 0.3em;
+}
+.social-list .icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: #fff;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 1px 3px rgba(80,120,180,0.09);
+}
+.social-list a:hover .icon {
+  transform: scale(1.09) rotate(-7deg);
+  box-shadow: 0 2px 8px rgba(30,167,253,0.18);
+}
+.about-right {
+  flex: 1;
+  min-width: 210px;
+}
+.about-bio p {
+  font-size: 1.06em;
+  color: #25374a;
+  margin-bottom: 0.6em;
+  text-align: justify;
+}
+.about-bio .motto {
+  font-style: italic;
+  color: #4890e0;
+  font-size: 1.03em;
+  margin-top: 1.1em;
+  text-align: right;
+  letter-spacing: 0.03em;
+}
+/* 夜间模式优化 */
+[data-md-color-scheme="slate"] .about-bio p {
+  color: #e7ecf3;
+}
+[data-md-color-scheme="slate"] .about-bio .motto {
+  color: #64b5f6;
+}
+[data-md-color-scheme="slate"] .about-left .avatar {
+  border: 2px solid #253043;
+  background: #1c2332;
+}
+[data-md-color-scheme="slate"] .social-list .icon {
+  background: #232936;
+}
+/* 移动端自适应 */
+@media (max-width: 700px) {
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+  }
+  .about-left {
+    margin-bottom: 0.2em;
+  }
+  .about-right {
+    width: 98%;
+    min-width: 0;
+  }
+  .about-bio p,
+  .about-bio .motto {
+    text-align: left;
+    font-size: 1em;
+  }
+}
+
+.about-mini-bio {
+  margin-top: 1.6em;
+  text-align: center;
+  color: #6a7b90;
+  font-size: 0.9em;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+[data-md-color-scheme="slate"] .about-mini-bio {
+  color: #b3c7e4;
+}
+.about-mini-bio p { margin: 0.5em 0 0 0; }
 
