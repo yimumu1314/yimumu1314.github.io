@@ -699,7 +699,7 @@ h4 {
   margin-top: 4.5em;
   margin-bottom: 0.6em;
   justify-content: center;
-  font-size: 0.92em;
+  font-size: 0.8em;
   color: #b0b3ba;
   opacity: 0.87;
   border: none;
@@ -708,7 +708,7 @@ h4 {
 
 .stats-bottom .stats-prefix {
   color: #b8babf;
-  font-size: 0.97em;
+  font-size: 0.95em;
 }
 
 /*--------------------------------------自我介绍页-----------------------------*/
@@ -819,3 +819,44 @@ h4 {
 }
 .about-mini-bio p { margin: 0.5em 0 0 0; }
 
+.social-list .icon {
+  background: rgba(255,255,255,0.75);
+  border-radius: 9px;
+  padding: 2.5px;
+  transition: background 0.3s;
+}
+[data-md-color-scheme="slate"] .social-list .icon {
+  background: rgba(255,255,255,0.20); /* 夜间变淡色底 */
+}
+
+
+/* 限制 cards 内图片宽度不超卡片区 */
+.grid.cards img, 
+.grid.cards > li img, 
+.grid.cards > div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 1px 10px rgba(80,110,150,0.10);
+}
+
+/* 保证 .grid.cards 内容不超正文最大宽度 */
+.grid.cards, .grid.cards > li, .grid.cards > div {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.img-caption {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 1.01em;
+  color: #6083ad;
+  letter-spacing: 0.04em;
+  font-family: inherit;
+}
+[data-md-color-scheme="slate"] .img-caption {
+  color: #b7cfff;
+}
