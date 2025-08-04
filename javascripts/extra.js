@@ -6,24 +6,28 @@ function panguSpacingAll() {
     pangu.autoSpacingPage();
   }
 }
-// 首次加载
-document.addEventListener('DOMContentLoaded', panguSpacingAll);
 
-// Material 页内导航/切换后再次排版 + 公式渲染
-if (typeof document$ !== "undefined") {
-  document$.subscribe(() => {
-    // Pangu自动排版
-    panguSpacingAll();
-    // MathJax 公式重渲染
-    if (typeof MathJax !== "undefined") {
-      MathJax.typesetPromise();
-    }
-  });
+// ------- MathJax 自动重渲染 -------
+function renderMathJaxAll(delay = 0) {
+  if (typeof MathJax !== "undefined" && MathJax.typesetPromise) {
+    setTimeout(() => {
+      MathJax.typesetPromise().catch((err) => {
+        // 可以忽略异常，不中断其它脚本
+      });
+    }, delay);
+  }
 }
 
-// 首次加载页面时公式渲染（兼容首屏未切换情况）
-window.addEventListener('DOMContentLoaded', function () {
-  if (typeof MathJax !== "undefined") {
-    MathJax.typesetPromise();
-  }
+// ------- 首次加载 -------
+document.addEventListener('DOMContentLoaded', function () {
+  panguSpacingAll();
+  renderMathJaxAll();
 });
+
+// ------- SPA 页内导航切换后自动排版和重渲染公式 -------
+if (typeof document$ !== "undefined") {
+  document$.subscribe(() => {
+    panguSpacingAll();
+    renderMathJaxAll(100);
+  });
+}
