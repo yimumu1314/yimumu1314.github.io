@@ -1279,7 +1279,7 @@
 <h2 id="搭建界面">搭建界面<a class="headerlink" href="#%E6%90%AD%E5%BB%BA%E7%95%8C%E9%9D%A2" title="跳转到此部分">¶</a></h2>
 <p>上面的运行方式可能有点麻烦，我们不妨为我们的大模型搭建一个界面，可以方便管理对话，以及传输文件。</p>
 <p>进入docker官网：<a href="https://docker.p2hp.com">https://docker.p2hp.com</a> 进行安装。安装后注册一些信息，然后打开界面，点击右下角的<code>Terminal</code>。</p>
-<p><a class="glightbox" href="/img/35.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/img/35.png"></a></p>
+<p><a class="glightbox" href="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/35.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/35.png"></a></p>
 <p>输入下面命令，进行拉取Open WebUI Docker镜像</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>ghcr.io/open-webui/open-webui:main
 </span></code></pre></div>
@@ -1287,16 +1287,16 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">3000</span>:8080<span class="w"> </span>--add-host<span class="o">=</span>host.docker.internal:host-gateway<span class="w"> </span>-v<span class="w"> </span>open-webui:/app/backend/data<span class="w"> </span>--name<span class="w"> </span>open-webui<span class="w"> </span>--restart<span class="w"> </span>always<span class="w"> </span>ghcr.io/open-webui/open-webui:main
 </span></code></pre></div>
 <p>浏览器输入：<a href="http://localhost:3000">http://localhost:3000</a>，点击<code>Get Started</code>并注册一些基本信息。</p>
-<p><a class="glightbox" href="/img/36.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/img/36.png"></a></p>
+<p><a class="glightbox" href="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/36.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/36.png"></a></p>
 <p>然后就可以进入界面，显示的是下载的7b模型。</p>
-<p><a class="glightbox" href="/img/37.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/img/37.png"></a></p>
+<p><a class="glightbox" href="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/37.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/37.png"></a></p>
 <p>然后就可以愉快的使用了，试了下，断网下也可以使用。</p>
-<p><a class="glightbox" href="/img/38.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/img/38.png"></a></p>
+<p><a class="glightbox" href="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/38.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/38.png"></a></p>
 <p>下次再使用时，在浏览器输入：<code>http://localhost:3000/</code>即可再次使用。</p>
 <p>如果要停止这个端口，则在docker输入：<code>docker stop open-webui</code>，如果想要删除这个端口可以：<code>docker rm open-webui</code>。</p>
 <h3 id="文件传输功能">文件传输功能<a class="headerlink" href="#%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8A%9F%E8%83%BD" title="跳转到此部分">¶</a></h3>
 <p>我只能说，真的很顶，<strong>不需要联网！！！</strong> 直接上传，然后进行智能分析，上传速度也很快，Amazing!</p>
-<p><a class="glightbox" href="/img/39.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="/img/39.png"></a></p>
+<p><a class="glightbox" href="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/39.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://yimumu-1341115581.cos.ap-guangzhou.myqcloud.com/Pic/39.png"></a></p>
 
 
 
