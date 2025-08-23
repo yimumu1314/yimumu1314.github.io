@@ -10,13 +10,13 @@
         <meta name="author" content="易木木响叮当">
       
       
-        <link rel="canonical" href="https://yimumu.top/Document/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E4%B8%8E%E7%BC%96%E7%A8%8B/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E8%BF%AD%E4%BB%A3%E6%B1%82%E8%A7%A3/Gauss-Seidel%E8%BF%AD%E4%BB%A3%E6%B3%95/">
+        <link rel="canonical" href="https://yimumu.top/Document/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E4%B8%8E%E7%BC%96%E7%A8%8B/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E8%BF%AD%E4%BB%A3%E6%B1%82%E8%A7%A3/%E9%80%90%E6%AC%A1%E8%B6%85%E6%9D%BE%E5%BC%9B%E8%BF%AD%E4%BB%A3%E6%B3%95SOR/">
       
       
-        <link rel="prev" href="../../%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9B%B4%E6%8E%A5%E6%B1%82%E8%A7%A3/%E8%A1%8C%E5%88%97%E5%BC%8F%E3%80%81%E6%B1%82%E9%80%86%E3%80%81%E7%9F%A9%E9%98%B5%E6%96%B9%E7%A8%8B/">
+        <link rel="prev" href="../Jacobi%E8%BF%AD%E4%BB%A3%E6%B3%95/">
       
       
-        <link rel="next" href="../Jacobi%E8%BF%AD%E4%BB%A3%E6%B3%95/">
+        <link rel="next" href="../Richardson%E5%90%8C%E6%AD%A5%E8%BF%AD%E4%BB%A3%E6%B3%95/">
       
       
       <link rel="icon" href="../../../../img/favicon.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Gauss-Seidel迭代法 - Documentation</title>
+        <title>逐次超松弛迭代法SOR - Documentation</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gauss-seidel迭代法" class="md-skip">
+        <a href="#逐次超松弛迭代法sor" class="md-skip">
           跳转至
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gauss-Seidel迭代法
+              逐次超松弛迭代法SOR
             
           </span>
         </div>
@@ -655,6 +655,50 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gauss-Seidel%E8%BF%AD%E4%BB%A3%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gauss-Seidel迭代法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jacobi%E8%BF%AD%E4%BB%A3%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jacobi迭代法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -671,7 +715,7 @@
           
   
   <span class="md-ellipsis">
-    Gauss-Seidel迭代法
+    逐次超松弛迭代法SOR
     
   </span>
   
@@ -683,7 +727,7 @@
         
   
   <span class="md-ellipsis">
-    Gauss-Seidel迭代法
+    逐次超松弛迭代法SOR
     
   </span>
   
@@ -718,41 +762,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#矩阵分解与推导" class="md-nav__link">
-    <span class="md-ellipsis">
-      矩阵分解与推导
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#迭代格式" class="md-nav__link">
-    <span class="md-ellipsis">
-      迭代格式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="迭代格式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#向量矩阵形式" class="md-nav__link">
-    <span class="md-ellipsis">
-      向量（矩阵）形式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#分量形式" class="md-nav__link">
     <span class="md-ellipsis">
       分量形式
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="分量形式">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#算法步骤" class="md-nav__link">
@@ -804,50 +821,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Jacobi%E8%BF%AD%E4%BB%A3%E6%B3%95/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Jacobi迭代法
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E9%80%90%E6%AC%A1%E8%B6%85%E6%9D%BE%E5%BC%9B%E8%BF%AD%E4%BB%A3%E6%B3%95SOR/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    逐次超松弛迭代法SOR
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1062,41 +1035,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#矩阵分解与推导" class="md-nav__link">
-    <span class="md-ellipsis">
-      矩阵分解与推导
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#迭代格式" class="md-nav__link">
-    <span class="md-ellipsis">
-      迭代格式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="迭代格式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#向量矩阵形式" class="md-nav__link">
-    <span class="md-ellipsis">
-      向量（矩阵）形式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#分量形式" class="md-nav__link">
     <span class="md-ellipsis">
       分量形式
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="分量形式">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#算法步骤" class="md-nav__link">
@@ -1170,9 +1116,9 @@
 
 
 
-<h1 id="gauss-seidel迭代法">Gauss-Seidel迭代法<a class="headerlink" href="#gauss-seidel%E8%BF%AD%E4%BB%A3%E6%B3%95" title="跳转到此部分">¶</a></h1>
+<h1 id="逐次超松弛迭代法sor">逐次超松弛迭代法SOR<a class="headerlink" href="#%E9%80%90%E6%AC%A1%E8%B6%85%E6%9D%BE%E5%BC%9B%E8%BF%AD%E4%BB%A3%E6%B3%95sor" title="跳转到此部分">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 799 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"></path></svg></span> 97 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 4 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 372 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"></path></svg></span> 99 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 2 分钟</p>
 </div>
 <h2 id="计算原理">计算原理<a class="headerlink" href="#%E8%AE%A1%E7%AE%97%E5%8E%9F%E7%90%86" title="跳转到此部分">¶</a></h2>
 <p>对于线性方程组：</p>
@@ -1180,97 +1126,85 @@
 \mathbf{A}\mathbf{x} = \mathbf{b}
 \]</div>
 <p>其中 <span class="arithmatex">\(\mathbf{A}\)</span> 是 <span class="arithmatex">\(n \times n\)</span> 的系数矩阵，<span class="arithmatex">\(\mathbf{x}\)</span> 是未知向量，<span class="arithmatex">\(\mathbf{b}\)</span> 是已知常数向量。</p>
-<p>Gauss-Seidel 迭代法是一种常用的线性方程组求解迭代算法。它的核心思想是：在每一轮迭代中，<strong>每个分量的计算都即时用上本轮已经更新过的新值</strong>，而不是等所有分量都算完才整体更新。这和 Jacobi 方法的“完全用上一步的值”是最大不同。</p>
-<h3 id="矩阵分解与推导">矩阵分解与推导<a class="headerlink" href="#%E7%9F%A9%E9%98%B5%E5%88%86%E8%A7%A3%E4%B8%8E%E6%8E%A8%E5%AF%BC" title="跳转到此部分">¶</a></h3>
-<p>对于线性方程组 <span class="arithmatex">\(\mathbf{A}\mathbf{x} = \mathbf{b}\)</span>，可以将系数矩阵 <span class="arithmatex">\(\mathbf{A}\)</span> 分解为三部分：</p>
+<p>SOR（Successive Over-Relaxation）超松弛迭代法是在 Gauss-Seidel 方法基础上的推广，通过引入松弛因子 <span class="arithmatex">\(\omega\)</span>，加速线性方程组 <span class="arithmatex">\(\mathbf{A}\mathbf{x} = \mathbf{b}\)</span> 的迭代收敛过程。</p>
 <ul>
-<li>对角阵 <span class="arithmatex">\(\mathbf{D}\)</span>，对角元为 <span class="arithmatex">\(a_{ii}\)</span></li>
-<li>严格下三角部分 <span class="arithmatex">\(\mathbf{L}\)</span></li>
-<li>严格上三角部分 <span class="arithmatex">\(\mathbf{U}\)</span></li>
+<li>当 <span class="arithmatex">\(\omega = 1\)</span> 时，SOR 退化为 Gauss-Seidel 方法。</li>
+<li>当 <span class="arithmatex">\(\omega &gt; 1\)</span> 时，称为 <strong>逐次超松弛迭代</strong> （Over-Relaxation），可加速收敛。</li>
+<li>当 <span class="arithmatex">\(0 &lt; \omega &lt; 1\)</span> 时，称为 <strong>逐次低松弛迭代</strong></li>
 </ul>
-<p>具体分解为：</p>
+<h3 id="分量形式">分量形式<a class="headerlink" href="#%E5%88%86%E9%87%8F%E5%BD%A2%E5%BC%8F" title="跳转到此部分">¶</a></h3>
+<p>SOR 方法对第 <span class="arithmatex">\(i\)</span> 个分量的迭代公式为：</p>
 <div class="arithmatex">\[
-\mathbf{A} = \mathbf{D}(\mathbf{I} - \mathbf{L}) - \mathbf{D}\mathbf{U}
+x_i^{k+1} = \frac{1}{a_{ii}} \left[
+  (1 - \omega) x_i^k
+  + \omega \left(
+    -\sum_{j=1}^{i-1} a_{ij} x_j^{k+1}
+    - \sum_{j=i+1}^{n} a_{ij} x_j^k
+    + b_i
+  \right)
+\right]
 \]</div>
-<p>其中</p>
+<p>其中：</p>
 <ul>
-<li><span class="arithmatex">\(\mathbf{D} = \text{diag}(a_{11}, a_{22}, \ldots, a_{nn})\)</span></li>
-<li><span class="arithmatex">\(\mathbf{L}\)</span> 为单位下三角矩阵，但去掉对角线，<span class="arithmatex">\(\mathbf{U}\)</span> 为上三角部分</li>
+<li><span class="arithmatex">\(k\)</span> 表示第 <span class="arithmatex">\(k\)</span> 次迭代；</li>
+<li><span class="arithmatex">\(x_j^{k+1}\)</span> 表示本轮已更新的新分量（<span class="arithmatex">\(j &lt; i\)</span>）；</li>
+<li><span class="arithmatex">\(x_j^k\)</span> 表示上一轮的旧分量（<span class="arithmatex">\(j &gt; i\)</span>）；</li>
+<li><span class="arithmatex">\(b_i\)</span> 是方程组右端项；</li>
+<li><span class="arithmatex">\(\omega\)</span> 是松弛因子。</li>
 </ul>
-<p><span class="arithmatex">\(\mathbf{ L }\)</span>为：</p>
-<div class="arithmatex">\[
-\mathbf { L } = { \left( \begin{array} { l l l l l l } { 0 } &amp; { 0 } &amp; { 0 } &amp; { \cdots } &amp; { 0 } &amp; { 0 } \\ { - { \frac { a _ { 2 1 } } { a _ { 2 2 } } } } &amp; { 0 } &amp; { 0 } &amp; { \cdots } &amp; { 0 } &amp; { 0 } \\ { - { \frac { a _ { 3 1 } } { a _ { 3 3 } } } } &amp; { - { \frac { a _ { 3 2 } } { a _ { 3 3 } } } } &amp; { 0 } &amp; { \cdots } &amp; { 0 } &amp; { 0 } \\ { \vdots } &amp; { \vdots } &amp; { \vdots } &amp; { \ddots } &amp; { \vdots } &amp; { \vdots } \\ { - { \frac { a _ { n 1 } } { a _ { n n } } } } &amp; { - { \frac { a _ { n 2 } } { a _ { n n } } } } &amp; { \cdots } &amp; { \cdots } &amp; { - { \frac { a _ { n , n - 1 } } { a _ { n n } } } } &amp; { 0 } \end{array} \right) }
-\]</div>
-<p><span class="arithmatex">\(\mathbf { U }\)</span>为：</p>
-<div class="arithmatex">\[
-\mathbf { U } = \left( \begin{array} { c c c c c c } { 0 } &amp; { - \frac { a _ { 1 2 } } { a _ { 1 1 } } } &amp; { - \frac { a _ { 1 3 } } { a _ { 1 1 } } } &amp; { \cdots } &amp; { - \frac { a _ { 1 , n - 1 } } { a _ { 1 1 } } } &amp; { - \frac { a _ { 1 n } } { a _ { 1 1 } } } \\ { 0 } &amp; { 0 } &amp; { - \frac { a _ { 2 3 } } { a _ { 2 2 } } } &amp; { \cdots } &amp; { - \frac { a _ { 2 , n - 1 } } { a _ { 2 2 } } } &amp; { - \frac { a _ { 2 n } } { a _ { 2 2 } } } \\ { \vdots } &amp; { \vdots } &amp; { \vdots } &amp; { \ddots } &amp; { \vdots } &amp; { \vdots } \\ { 0 } &amp; { 0 } &amp; { 0 } &amp; { 0 } &amp; { 0 } &amp; { - \frac { a _ { n - 1 , n } } { a _ { n - 1 , n - 1 } } } \\ { 0 } &amp; { 0 } &amp; { 0 } &amp; { 0 } &amp; { 0 } &amp; { 0 } \end{array} \right)
-\]</div>
-<h3 id="迭代格式">迭代格式<a class="headerlink" href="#%E8%BF%AD%E4%BB%A3%E6%A0%BC%E5%BC%8F" title="跳转到此部分">¶</a></h3>
-<h4 id="向量矩阵形式">向量（矩阵）形式<a class="headerlink" href="#%E5%90%91%E9%87%8F%E7%9F%A9%E9%98%B5%E5%BD%A2%E5%BC%8F" title="跳转到此部分">¶</a></h4>
-<p>高斯-赛德尔迭代的矩阵格式为：</p>
-<div class="arithmatex">\[
-\mathbf{x}_k = \mathbf{L}\mathbf{x}_k + \mathbf{U}\mathbf{x}_{k-1} + \mathbf{D}^{-1}\mathbf{b}
-\]</div>
-<ul>
-<li>其中 <span class="arithmatex">\(\mathbf{x}_k\)</span> 表示第 <span class="arithmatex">\(k\)</span> 次迭代得到的近似解。</li>
-<li><span class="arithmatex">\(\mathbf{L}\mathbf{x}_k\)</span>：用的是当前轮已经更新的分量</li>
-<li><span class="arithmatex">\(\mathbf{U}\mathbf{x}_{k-1}\)</span>：用的是上一轮的分量（尚未更新）</li>
-</ul>
-<h4 id="分量形式">分量形式<a class="headerlink" href="#%E5%88%86%E9%87%8F%E5%BD%A2%E5%BC%8F" title="跳转到此部分">¶</a></h4>
-<p>对于第 <span class="arithmatex">\(i\)</span> 个分量，第 <span class="arithmatex">\(k\)</span> 轮迭代时，更新公式为：
-$$
-x_i^{(k)} = \frac{1}{a_{ii}} \left(
-    b_i - \sum_{j=1}^{i-1} a_{ij} x_j^{(k)}
-        - \sum_{j=i+1}^{n} a_{ij} x_j^{(k-1)}
-\right)
-$$</p>
-<ul>
-<li>第一项 <span class="arithmatex">\(b_i\)</span> 是常数向量的第 <span class="arithmatex">\(i\)</span> 个分量</li>
-<li><span class="arithmatex">\(j &lt; i\)</span>：用的是 <strong>本轮刚刚更新的新分量</strong></li>
-<li><span class="arithmatex">\(j &gt; i\)</span>：用的是 <strong>上一轮的旧分量</strong></li>
-</ul>
+<p><strong>松弛因子经验值推荐：</strong></p>
+<table>
+<thead>
+<tr>
+<th>问题类型</th>
+<th style="text-align: center;">推荐 <span class="arithmatex">\(\omega\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>对称正定线性方程</td>
+<td style="text-align: center;">1.2 ~ 1.8</td>
+</tr>
+<tr>
+<td>一般稀疏线性方程</td>
+<td style="text-align: center;">1.0 ~ 1.7</td>
+</tr>
+<tr>
+<td>高维稀疏系统</td>
+<td style="text-align: center;">1.1 ~ 1.6</td>
+</tr>
+</tbody>
+</table>
 <h4 id="算法步骤">算法步骤<a class="headerlink" href="#%E7%AE%97%E6%B3%95%E6%AD%A5%E9%AA%A4" title="跳转到此部分">¶</a></h4>
 <ol>
-<li>
-<p><strong>初始化</strong><br>
-   给定初始猜测 <span class="arithmatex">\(x^{(0)}\)</span>（通常可用全零或任意向量），记作 <code>x0</code>。</p>
+<li><strong>初始化</strong></li>
+<li>给定初始猜测 <span class="arithmatex">\(x^0\)</span>（如全零向量或任意向量），记作 <code>x0</code>。</li>
+<li><strong>主迭代循环</strong></li>
+<li>对 <span class="arithmatex">\(k = 1, 2, \ldots\)</span>，直到满足收敛判据为止：<ul>
+<li>对每个分量 <span class="arithmatex">\(i = 1, 2, \ldots, n\)</span>：</li>
+<li>累加 <span class="arithmatex">\(j=1\)</span> 到 <span class="arithmatex">\(i-1\)</span> 的 <span class="arithmatex">\(a_{ij} x_j^{k+1}\)</span>（已更新的新值）；</li>
+<li>累加 <span class="arithmatex">\(j=i+1\)</span> 到 <span class="arithmatex">\(n\)</span> 的 <span class="arithmatex">\(a_{ij} x_j^k\)</span>（上一轮的旧值）；</li>
+<li>按上式用 <span class="arithmatex">\(\omega\)</span> 加权，求出新的 <span class="arithmatex">\(x_i^{k+1}\)</span>；</li>
+<li>计算新旧解的范数差 <span class="arithmatex">\(\|x^{k+1} - x^k\|\)</span> 判断是否收敛。</li>
+</ul>
 </li>
-<li>
-<p><strong>主循环迭代</strong></p>
-</li>
+<li><strong>输出结果</strong></li>
+<li>当收敛判据（如 <span class="arithmatex">\(\|x^{k+1} - x^k\| &lt; \varepsilon\)</span>）满足时，停止迭代，输出 <span class="arithmatex">\(x^{k+1}\)</span> 作为近似解。</li>
 </ol>
-<p>对 <span class="arithmatex">\(k = 1, 2, \ldots\)</span> 直到收敛：</p>
-<ul>
-<li>
-<p>对每个分量 <span class="arithmatex">\(i=1\)</span> 到 <span class="arithmatex">\(n\)</span>：</p>
-<ul>
-<li>计算当前 <span class="arithmatex">\(x_i^{(k)}\)</span>：</li>
-<li>先累加 <span class="arithmatex">\(j=1\)</span> 到 <span class="arithmatex">\(i-1\)</span> 的 <span class="arithmatex">\(a_{ij} x_j^{(k)}\)</span>（已经更新过的新解）</li>
-<li>再累加 <span class="arithmatex">\(j=i+1\)</span> 到 <span class="arithmatex">\(n\)</span> 的 <span class="arithmatex">\(a_{ij} x_j^{(k-1)}\)</span>（上一轮的旧解）</li>
-<li>代入公式得到新的 <span class="arithmatex">\(x_i^{(k)}\)</span></li>
-</ul>
-</li>
-<li>
-<p>计算新解与旧解的距离（欧氏范数）判断收敛：<span class="arithmatex">\(\Delta x = \sqrt{ \sum_{i=1}^n (x_i^{(k)} - x_i^{(k-1)})^2 }\)</span>如果 <span class="arithmatex">\(\Delta x &lt; \varepsilon\)</span>，则认为已收敛，停止迭代。</p>
-</li>
-<li>
-<p><strong>输出结果</strong>：最终 <span class="arithmatex">\(x^{(k)}\)</span> 即为近似解。</p>
-</li>
-</ul>
 <h2 id="fortran数值实现">Fortran数值实现<a class="headerlink" href="#fortran%E6%95%B0%E5%80%BC%E5%AE%9E%E7%8E%B0" title="跳转到此部分">¶</a></h2>
-<div class="language-fortran highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">subroutine </span><span class="n">gauss_seidel</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c">! gauss_seidel迭代法</span>
+<div class="language-fortran highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">subroutine </span><span class="n">sor</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c">! sor迭代法</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">n</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="kt">real</span><span class="o">*</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">b</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">x0</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="kt">real</span><span class="o">*</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">x</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="kt">real</span><span class="o">*</span><span class="mi">8</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">x1</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">x2</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">iter_max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="c">! 默认迭代次数</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="kt">real</span><span class="o">*</span><span class="mi">8</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">eps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0d-7</span><span class="w"> </span><span class="c">! 默认精度</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="kt">logical</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">diagonally_dominant</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="c">! ---------- 增加收敛性判据判断 ----------</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="kt">real</span><span class="o">*</span><span class="mi">8</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">s</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="kt">real</span><span class="o">*</span><span class="mi">8</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">omiga</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.2d0</span><span class="w"> </span><span class="c">! 松弛因子</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="kt">real</span><span class="o">*</span><span class="mi">8</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">x1</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">x2</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">iter_max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="c">! 默认迭代次数</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="kt">real</span><span class="o">*</span><span class="mi">8</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">eps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0d-7</span><span class="w"> </span><span class="c">! 默认精度</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="kt">logical</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">diagonally_dominant</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="c">! ---------- 增加收敛性判据 ----------</span>
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="n">diagonally_dominant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">.</span><span class="n">true</span><span class="p">.</span>
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="k">do </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">n</span>
 </span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0d0</span>
@@ -1287,97 +1221,84 @@ $$</p>
 </span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="k">    end do</span>
 </span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="k">    if</span><span class="w"> </span><span class="p">(.</span><span class="nb">not</span><span class="p">.</span><span class="w"> </span><span class="n">diagonally_dominant</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
 </span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="k">        write</span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="s1">'(A)'</span><span class="p">)</span><span class="w"> </span><span class="s1">'The coefficient matrix is not strictly diagonally dominant.'</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="k">write</span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="s1">'(A)'</span><span class="p">)</span><span class="w"> </span><span class="s1">'Gauss-Seidel iteration may not converge!'</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="k">write</span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="s1">'(A)'</span><span class="p">)</span><span class="w"> </span><span class="s1">'SOR iteration may not converge!'</span>
 </span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span><span class="k">return</span>
 </span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="k">    end if</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="c">! ----------------------------------------</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="c">! -------------------------------------</span>
 </span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
 </span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="k">write</span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="mi">501</span><span class="p">)</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">    </span><span class="k">write</span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="mi">502</span><span class="p">)</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">    </span><span class="c">! 迭代之前两值都设为初值</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="n">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x0</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">    </span><span class="n">x2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x1</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">    </span><span class="k">do </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">iter_max</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">        </span><span class="k">do </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">n</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">            </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">            </span><span class="k">do </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">n</span>
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">                </span><span class="c">! 若j &lt; i，则表示这些量已经更新过了，则下一个元素就用最新的量计算</span>
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">                </span><span class="c">! 若j &gt; i，则表示还没有计算到这些量，所以就用上一次迭代的结果</span>
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="k">                    </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="n">x2</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">                </span><span class="k">else if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
-</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="k">                    </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="n">x1</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">                </span><span class="k">end if</span>
-</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="k">            end do</span>
-</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="k">            </span><span class="n">x2</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="o">/</span><span class="n">a</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
-</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">        </span><span class="k">end do</span>
-</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">        </span><span class="c">! 精度判断</span>
-</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">        </span><span class="n">dx2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">norm2</span><span class="p">(</span><span class="n">x2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">x1</span><span class="p">)</span><span class="w"> </span><span class="c">! 可使用内置函数计算二范数</span>
-</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dx2</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">eps</span><span class="p">)</span><span class="w"> </span><span class="k">exit</span>
-</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>
-</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="k">        </span><span class="n">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x2</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">    </span><span class="c">! 迭代之前两值都设为初值</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">    </span><span class="n">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x0</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="n">x2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x1</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">    </span><span class="k">do </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">iter_max</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">        </span><span class="k">do </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">n</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">            </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">            </span><span class="k">do </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">n</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">                </span><span class="c">! 若j &lt; i，则表示这些量已经更新过了，则下一个元素就用最新的量计算</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">                </span><span class="c">! 若j &gt; i，则表示还没有计算到这些量，所以就用上一次迭代的结果</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="k">                    </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="n">x2</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">                </span><span class="k">else if</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="k">                    </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="n">x1</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">                </span><span class="k">end if</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="k">            end do</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="k">            </span><span class="n">x2</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">-</span><span class="n">s</span><span class="p">)</span><span class="o">*</span><span class="n">omiga</span><span class="o">/</span><span class="n">A</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omiga</span><span class="p">)</span><span class="o">*</span><span class="n">x1</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">        </span><span class="k">end do</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">        </span><span class="c">! 精度判断</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">        </span><span class="n">dx2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">norm2</span><span class="p">(</span><span class="n">x2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">x1</span><span class="p">)</span><span class="w"> </span><span class="c">! 可使用内置函数计算二范数</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dx2</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">eps</span><span class="p">)</span><span class="w"> </span><span class="k">exit</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="k">        </span><span class="n">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x2</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">        </span><span class="k">write</span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="mi">503</span><span class="p">)</span><span class="w"> </span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">x2</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
 </span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>
-</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">        </span><span class="k">write</span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="mi">503</span><span class="p">)</span><span class="w"> </span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">x2</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
-</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="w">    </span><span class="k">end do</span>
-</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="k">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x2</span>
-</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>
-</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="w">    </span><span class="mi">501</span><span class="w"> </span><span class="k">format</span><span class="p">(</span><span class="o">//</span><span class="p">,</span><span class="mi">18</span><span class="n">x</span><span class="p">,</span><span class="s2">"Gauss_Seidel Iterative"</span><span class="p">,</span><span class="o">//</span><span class="p">)</span>
-</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="w">    </span><span class="mi">502</span><span class="w"> </span><span class="k">format</span><span class="p">(</span><span class="s2">"  Iter"</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="s2">"  x1"</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="s2">"  x2"</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="s2">"  x3"</span><span class="p">)</span>
-</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="w">    </span><span class="mi">503</span><span class="w"> </span><span class="k">format</span><span class="p">(</span><span class="n">i5</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">(</span><span class="mi">3</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">f12</span><span class="p">.</span><span class="mi">8</span><span class="p">))</span>
-</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>
-</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="k">end subroutine </span><span class="n">gauss_seidel</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">    </span><span class="k">end do</span>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="k">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x2</span>
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="w">    </span><span class="mi">501</span><span class="w"> </span><span class="k">format</span><span class="p">(</span><span class="o">//</span><span class="p">,</span><span class="mi">18</span><span class="n">x</span><span class="p">,</span><span class="s2">"SOR Iterative"</span><span class="p">,</span><span class="o">//</span><span class="p">)</span>
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="w">    </span><span class="mi">503</span><span class="w"> </span><span class="k">format</span><span class="p">(</span><span class="n">i5</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">(</span><span class="mi">3</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">f12</span><span class="p">.</span><span class="mi">8</span><span class="p">))</span>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="k">end subroutine </span><span class="n">sor</span>
 </span></code></pre></div>
 <h2 id="数值案例">数值案例<a class="headerlink" href="#%E6%95%B0%E5%80%BC%E6%A1%88%E4%BE%8B" title="跳转到此部分">¶</a></h2>
 <div class="arithmatex">\[
-\begin{pmatrix}
-10 &amp; -1 &amp; 0 \\
--1 &amp; 10 &amp; -2 \\
-0 &amp; -4 &amp; 10
-\end{pmatrix}
-\begin{pmatrix}
-x_1 \\
-x_2 \\
-x_3
-\end{pmatrix}
-=
-\begin{pmatrix}
-9 \\
-7 \\
-6
-\end{pmatrix}
+\begin{array} { r } { \left( \begin{array} { l l l l } { 5 } &amp; { - 1 } &amp; { - 1 } &amp; { - 1 } \\ { - 1 } &amp; { 1 0 } &amp; { - 1 } &amp; { - 1 } \\ { - 1 } &amp; { - 1 } &amp; { 5 } &amp; { - 1 } \\ { - 1 } &amp; { - 1 } &amp; { - 1 } &amp; { 1 0 } \end{array} \right) \mathbf { x } = \left( \begin{array} { l } { - 4 } \\ { 1 2 } \\ { 8 } \\ { 3 4 } \end{array} \right) } \end{array}
 \]</div>
 <p>主程序：</p>
 <div class="language-fortran highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">program </span><span class="n">main</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="k">implicit none</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">    </span><span class="kt">integer</span><span class="p">,</span><span class="w"> </span><span class="k">parameter</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">    </span><span class="kt">integer</span><span class="p">,</span><span class="w"> </span><span class="k">parameter</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="kt">real</span><span class="o">*</span><span class="mi">8</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">b</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">x</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">x0</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">reshape</span><span class="p">([</span><span class="mi">1</span><span class="mf">0.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0d0</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">                </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="mf">0.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">2.0d0</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">                </span><span class="mf">0.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">4.0d0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="mf">0.0d0</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">],</span><span class="w"> </span><span class="n">order</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span><span class="w">  </span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">9.0d0</span><span class="p">,</span><span class="w"> </span><span class="mf">7.0d0</span><span class="p">,</span><span class="w"> </span><span class="mf">6.0d0</span><span class="p">]</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="n">x0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0d0</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="k">call </span><span class="n">gauss_seidel</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">x0</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="k">end program </span><span class="n">main</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">reshape</span><span class="p">([</span><span class="mf">5.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">                </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="mf">0.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span><span class="w">  </span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">                </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="mf">5.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span><span class="w">  </span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">                </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1.0d0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="mf">0.0d0</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">],</span><span class="w"> </span><span class="n">order</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span><span class="w"> </span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="o">-</span><span class="mf">4.0d0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="mf">2.0d0</span><span class="p">,</span><span class="w"> </span><span class="mf">8.0d0</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="mf">4.0d0</span><span class="p">]</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="n">x0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0d0</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="k">call </span><span class="n">sor</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">x0</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="k">end program </span><span class="n">main</span>
 </span></code></pre></div>
 <p>输出：</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>                  Gauss_Seidel Iterative
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>                  SOR Iterative
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  Iter       x1              x2              x3
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    1     0.90000000     0.79000000     0.91600000
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    2     0.97900000     0.98110000     0.99244000
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    3     0.99811000     0.99829900     0.99931960
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    4     0.99982990     0.99984691     0.99993876
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    5     0.99998469     0.99998622     0.99999449
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    6     0.99999862     0.99999876     0.99999950
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    7     0.99999988     0.99999989     0.99999996
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    8     0.99999999     0.99999999     1.00000000
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    1    -0.96000000     1.32480000     2.00755200     4.36468224
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    2     1.07928822     2.06922269     3.32165596     3.98348358
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    3     1.07398929     2.03165092     2.95705852     4.01082713
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    4     0.98509092     1.98802700     3.00473511     3.99517694
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    5     1.00008719     2.00239451     2.99849105     4.00108134
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    6     1.00045462     1.99952434     3.00055626     3.99984796
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    7     0.99989193     2.00013067     2.99985768     4.00001604
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    8     1.00002267     1.99996143     3.00002850     3.99999830
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    9     0.99999264     2.00001005     2.99999454     4.00000001
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>   10     1.00000257     1.99999764     3.00000115     4.00000016
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>   11     0.99999923     2.00000054     2.99999975     3.99999991
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>   12     1.00000020     1.99999988     3.00000005     4.00000003
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>   13     0.99999995     2.00000003     2.99999999     3.99999999
 </span></code></pre></div>
 <blockquote>
 <p><strong>注意</strong>：子程序中默认：<code>implicit real*8(a-z)</code></p>
