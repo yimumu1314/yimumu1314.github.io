@@ -1,4 +1,5 @@
 /* ************************新添加内容 ************************/
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css');
 @font-face {
   font-family: 'LXGW WenKai';
   font-weight: normal;
@@ -22,6 +23,12 @@ body {
     }
 
 /* ************************新添加内容 ************************/
+
+/* 粘性 footer：内容不足时 footer 贴底 */
+.md-container {
+  min-height: calc(100vh - 2.4rem); /* 首屏兜底，SPA 导航由 JS 动态修正 */
+}
+
 :root {
   --admonition-border-left-width: 0.2rem;
   --base-border-radius: 0.5rem;
@@ -487,7 +494,7 @@ h4 {
 .md-typeset img:hover {
   box-shadow: 0 6px 32px 0 rgba(40,40,40,0.16);
 }
-.md-typeset em {
+.md-typeset img + em {
   font-style: normal !important;
   color: #888 !important;
   font-size: 0.98rem !important;

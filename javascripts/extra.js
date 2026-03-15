@@ -24,10 +24,23 @@ document.addEventListener('DOMContentLoaded', function () {
   renderMathJaxAll();
 });
 
+// ------- footer 贴底：动态设置 .md-container 最小高度 -------
+function fixContainerHeight() {
+  const container = document.querySelector('.md-container');
+  const header = document.querySelector('.md-header');
+  if (!container || !header) return;
+  const headerH = header.getBoundingClientRect().height;
+  container.style.setProperty('min-height', 'calc(100vh - ' + headerH + 'px)', 'important');
+}
+
 // ------- SPA 页内导航切换后自动排版和重渲染公式 -------
 if (typeof document$ !== "undefined") {
   document$.subscribe(() => {
     panguSpacingAll();
     renderMathJaxAll(100);
+    // 推迟到浏览器下一帧，确保 DOM 已提交、CSS 已应用再强制计算高度
+    requestAnimationFrame(fixContainerHeight);
   });
 }
+
+window.addEventListener('resize', fixContainerHeight);
